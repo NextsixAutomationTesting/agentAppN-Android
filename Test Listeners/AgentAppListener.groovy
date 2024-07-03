@@ -22,13 +22,68 @@ import com.kms.katalon.core.annotation.AfterTestSuite
 import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
 
+import com.kms.katalon.core.mobile.helper.MobileScreenCaptor
+import com.kms.katalon.core.mobile.keyword.internal.MobileAbstractKeyword
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
+import io.appium.java_client.AppiumDriver
+
 class AgentAppListener {
 	/**
 	 * Executes before every test case starts.
 	 * @param testCaseContext related information of the executed test case.
 	 */
+	
+	private void openApp()
+	{
+	Mobile.startExistingApplication("com.nextsix.proforma", FailureHandling.STOP_ON_FAILURE)
+	
+		if(Mobile.verifyElementVisible(findTestObject('Object Repository/android.widget.Button - While using the app (1)'), 8, FailureHandling.OPTIONAL))
+		{
+			Mobile.tap(findTestObject('Object Repository/android.widget.Button - While using the app (1)'),5)
+		
+			Mobile.waitForElementPresent(findTestObject('Object Repository/android.widget.Button - Allow (2)'), 5)
+			Mobile.tap(findTestObject('Object Repository/android.widget.Button - Allow (2)'),5)
+		
+		}
+	}
+	
 	@BeforeTestCase
-	def sampleBeforeTestCase(TestCaseContext testCaseContext) {
-		Mobile.startExistingApplication("com.nextsix.proforma", FailureHandling.STOP_ON_FAILURE)
+	def beforeCase(TestCaseContext testCaseContext) 
+	{
+		openApp()
+	}
+	
+	private void closeApp()
+	{
+		Mobile.closeApplication()
+	}
+	
+	private void clearAppDataAndCloseApp() 
+	{
+        AppiumDriver driver = MobileDriverFactory.getDriver()
+		
+		// Close the app
+		driver.terminateApp("com.nextsix.proforma")
+		
+		// Clear app data
+		String adbCommand = "adb shell pm clear com.nextsix.proforma"
+		Runtime.getRuntime().exec(adbCommand)
+    }
+	
+	
+	/**REMEMBER TO COM OUT WHEN RUNNING TEST SUITE**/
+	@AfterTestCase
+	def ifFailed(TestCaseContext testCaseContext)
+	{
+		if (!testCaseContext.getTestCaseStatus().equals("PASSED"))
+		{
+			Mobile.delay(1)
+			clearAppDataAndCloseApp()
+			//openApp()
+		}
+		else if (testCaseContext.getTestCaseStatus().equals("PASSED"))
+		{
+			closeApp()
+		}
 	}
 }

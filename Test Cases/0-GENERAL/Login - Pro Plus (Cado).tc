@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login - Pro Plus (Cado)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f96edc3d-9d40-4c0b-a9eb-7b1c760a2e49</testCaseGuid>
+</TestCaseEntity>
