@@ -12,7 +12,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{   \n\t\&quot;propertyId\&quot;: \&quot;65cf0f320a1c130066ad8c9c\&quot;,\n    \&quot;userId\&quot;: \&quot;64e328a23af351004ec321fc\&quot;,\n    \&quot;agentId\&quot;:\&quot;5e5e0545ca612e08545b0e2e\&quot;,\n    \&quot;date\&quot;:\&quot;${date}\&quot;,\n    \&quot;firstAvailableSlot\&quot;:\&quot;${slot}\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{   \n\t\&quot;propertyId\&quot;: \&quot;668221ac9e9f4500564c332f\&quot;,\n    \&quot;userId\&quot;: \&quot;64e328a23af351004ec321fc\&quot;,\n    \&quot;agentId\&quot;:\&quot;6554159b68995716dc360d7f\&quot;,\n    \&quot;date\&quot;:\&quot;${date}\&quot;,\n    \&quot;firstAvailableSlot\&quot;:\&quot;${slot}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
