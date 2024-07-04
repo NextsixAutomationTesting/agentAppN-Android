@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description></description>
-   <name>android.widget.EditText - propname</name>
+   <name>android.widget.TextView - Kuchai Lama,Wilayah Persekutuan Kuala Lumpur</name>
    <tag></tag>
-   <elementGuidId>c2ddaa47-8ff8-4928-ac2a-4169416a5281</elementGuidId>
+   <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -12,24 +12,32 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>android.widget.EditText</value>
-      <webElementGuid>b3d5fc89-2478-44aa-bccc-43a0a17cf9c6</webElementGuid>
+      <value>android.widget.TextView</value>
+      <webElementGuid>d9a062f0-5895-46b7-8e50-2c4781a831ed</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>index</name>
       <type>Main</type>
-      <value>1</value>
-      <webElementGuid>49fc5db6-c42f-4637-a4b4-53715449feac</webElementGuid>
+      <value>5</value>
+      <webElementGuid>72055d31-6046-4e38-a3a4-7783a3aad772</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Kuchai Lama,Wilayah Persekutuan Kuala Lumpur</value>
+      <webElementGuid>9c330063-dcca-4b56-b6a2-a93ccd71303c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>package</name>
       <type>Main</type>
       <value>com.nextsix.proforma</value>
-      <webElementGuid>0e2ec82f-9523-478f-a2b3-2fff2d036aaf</webElementGuid>
+      <webElementGuid>d085ad69-d35e-4012-a157-d2c571975d6c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -37,7 +45,7 @@
       <name>checkable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>6793719c-2d3e-4805-8f76-8bc944b4c263</webElementGuid>
+      <webElementGuid>cf861821-b7d1-4f51-82cc-df3590fa22ef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,15 +53,15 @@
       <name>checked</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>2e58be21-e5b1-4fc0-8cc1-49c8f69ed395</webElementGuid>
+      <webElementGuid>3fadccc2-eb83-48d7-9105-cf79f82083b5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>clickable</name>
       <type>Main</type>
-      <value>true</value>
-      <webElementGuid>8a6a8a66-f17a-4530-83ea-e9ece64cf131</webElementGuid>
+      <value>false</value>
+      <webElementGuid>f1e1f328-2241-4b5b-b07b-afcc0221960d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,15 +69,15 @@
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>19ca398e-16c8-4384-92db-2902ac66f5d3</webElementGuid>
+      <webElementGuid>b05b9bc5-a33b-4539-890a-bc587ab207a9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>focusable</name>
       <type>Main</type>
-      <value>true</value>
-      <webElementGuid>9bc504ed-da55-413f-af2e-4ebd7cf9a084</webElementGuid>
+      <value>false</value>
+      <webElementGuid>a06a9389-0499-4f62-807a-0b7c45d292c4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +85,7 @@
       <name>focused</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>9a179abe-7ce8-4ea0-aedf-191faa970fd3</webElementGuid>
+      <webElementGuid>93f70df7-b6ca-4d05-8263-15a6fadeda99</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +93,7 @@
       <name>scrollable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>b697d1bb-ce8d-4cb0-b62f-134dedb9cd24</webElementGuid>
+      <webElementGuid>d91f9a9e-5b8c-4b5b-bec0-408a42ec1e49</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,7 +101,7 @@
       <name>long-clickable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>79eb0241-e12e-4e79-aa4e-321b5ea5c795</webElementGuid>
+      <webElementGuid>408a04c3-02c7-4c48-b743-ba032011e4e2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -101,7 +109,7 @@
       <name>password</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>712284b3-c9cc-4329-a105-0779fcfeb06e</webElementGuid>
+      <webElementGuid>c9a781e0-9662-4a24-8614-dddc3ddc1e02</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -109,47 +117,47 @@
       <name>selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>612fd755-6dd4-42a1-beb7-ecee19566f8c</webElementGuid>
+      <webElementGuid>b2c8a1a0-0fd6-4a27-b171-3bdfd1dd7284</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>x</name>
       <type>Main</type>
-      <value>107</value>
-      <webElementGuid>92c0f4d4-38e3-45ee-bd81-a506ecacaf2d</webElementGuid>
+      <value>422</value>
+      <webElementGuid>fa407abe-21ab-4f44-a987-7ebf1105f1bf</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>y</name>
       <type>Main</type>
-      <value>819</value>
-      <webElementGuid>7df49790-9191-4b26-9733-8b4c10e1436b</webElementGuid>
+      <value>1384</value>
+      <webElementGuid>3ed477fd-b31a-4c14-b890-4e3a483bf21a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>width</name>
       <type>Main</type>
-      <value>866</value>
-      <webElementGuid>c53f7516-8366-420f-a820-0875411bc3ac</webElementGuid>
+      <value>597</value>
+      <webElementGuid>e50a21da-c559-4c5c-ad06-f8feec0a8d95</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>height</name>
       <type>Main</type>
-      <value>91</value>
-      <webElementGuid>0c0ab639-9ea7-4dfd-af1e-2dc0dd03d577</webElementGuid>
+      <value>81</value>
+      <webElementGuid>b283f52a-de9c-4df8-b071-ef62fdf02a2a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>bounds</name>
       <type>Main</type>
-      <value>[107,819][973,910]</value>
-      <webElementGuid>f5e3313f-91ab-42c1-b9d5-daa7fb608250</webElementGuid>
+      <value>[422,1384][1019,1465]</value>
+      <webElementGuid>10847e45-5805-44a1-83f9-c70abee8961a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -157,33 +165,17 @@
       <name>displayed</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>ba78bf8c-0852-49ba-b79b-23cd78a819a5</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>hint</name>
-      <type>Main</type>
-      <value>PROPERTY NAME *</value>
-      <webElementGuid>0028aa36-7745-4a99-b53a-d43114f01d29</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value></value>
-      <webElementGuid>b2456703-cfc5-4ceb-9cd8-8b49b4fc767a</webElementGuid>
+      <webElementGuid>6a7384da-9437-431e-a922-8c695b4f67f5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//hierarchy/android.widget.FrameLayout[3]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[3]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.webkit.WebView[1]/android.webkit.WebView[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.widget.EditText[1]</value>
-      <webElementGuid>e0f76b3c-acfc-4b91-b77f-f5dee61749b9</webElementGuid>
+      <value>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[2]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.TextView[5]</value>
+      <webElementGuid>d2fc1b78-9092-4c30-8de8-80aea8b51c12</webElementGuid>
    </webElementProperties>
-   <locator>//*[@class = 'android.widget.EditText' and @package = 'com.nextsix.proforma' and @hint = 'PROPERTY NAME *']</locator>
+   <locator>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[2]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.TextView[5]</locator>
    <locatorCollection>
       <entry>
          <key>NAME</key>
@@ -195,7 +187,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//hierarchy/android.widget.FrameLayout[3]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[3]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.webkit.WebView[1]/android.webkit.WebView[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.widget.EditText[1]</value>
+         <value>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[2]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[3]/android.widget.ScrollView[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.TextView[5]</value>
       </entry>
       <entry>
          <key>ANDROID_VIEWTAG</key>
@@ -203,11 +195,11 @@
       </entry>
       <entry>
          <key>ANDROID_UI_AUTOMATOR</key>
-         <value>new UiSelector().className(&quot;android.widget.EditText&quot;).packageName(&quot;com.nextsix.proforma&quot;).enabled(true).clickable(true).longClickable(false).checkable(false).checked(false).focusable(true).focused(false).scrollable(false).selected(false).index(1)</value>
+         <value>new UiSelector().className(&quot;android.widget.TextView&quot;).text(&quot;Kuchai Lama,Wilayah Persekutuan Kuala Lumpur&quot;).packageName(&quot;com.nextsix.proforma&quot;).enabled(true).clickable(false).longClickable(false).checkable(false).checked(false).focusable(false).focused(false).scrollable(false).selected(false).index(5)</value>
       </entry>
       <entry>
          <key>IOS_CLASS_CHAIN</key>
-         <value>**[`enabled == 1 AND hint == 'PROPERTY NAME *'`]</value>
+         <value></value>
       </entry>
       <entry>
          <key>CUSTOM</key>
@@ -215,7 +207,7 @@
       </entry>
       <entry>
          <key>IOS_PREDICATE_STRING</key>
-         <value>enabled == 1 AND hint == 'PROPERTY NAME *'</value>
+         <value></value>
       </entry>
       <entry>
          <key>ID</key>
@@ -223,17 +215,17 @@
       </entry>
       <entry>
          <key>ATTRIBUTES</key>
-         <value>//*[@class = 'android.widget.EditText' and @package = 'com.nextsix.proforma' and @hint = 'PROPERTY NAME *']</value>
+         <value>//*[@class = 'android.widget.TextView' and (@text = 'Kuchai Lama,Wilayah Persekutuan Kuala Lumpur' or . = 'Kuchai Lama,Wilayah Persekutuan Kuala Lumpur')]</value>
       </entry>
       <entry>
          <key>CLASS_NAME</key>
-         <value>android.widget.EditText</value>
+         <value>android.widget.TextView</value>
       </entry>
       <entry>
          <key>IMAGE</key>
          <value></value>
       </entry>
    </locatorCollection>
-   <locatorStrategy>ATTRIBUTES</locatorStrategy>
+   <locatorStrategy>XPATH</locatorStrategy>
    <platform>ANDROID</platform>
 </MobileElementEntity>

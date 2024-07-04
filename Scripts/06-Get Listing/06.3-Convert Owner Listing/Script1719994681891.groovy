@@ -19,60 +19,69 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('0-GENERAL/Login - Pro Plus (Cado)'), [:])
 
-Mobile.tap(findTestObject('06 Get Listing/android.widget.TextView - Get Listing'), 0)
+Mobile.tap(findTestObject('06 Get Listing/android.widget.TextView - Get Listing'), 5)
 
 Mobile.waitForElementPresent(findTestObject('06 Get Listing/android.widget.EditText - Search Listing'), 30)
+Mobile.tap(findTestObject('Object Repository/06 Get Listing/android.widget.TextView - Owner (Sale)'), 5)
 
-Mobile.tap(findTestObject('06 Get Listing/android.widget.TextView - Owner (Sale)'), 0)
+Mobile.tap(findTestObject('06 Get Listing/android.widget.TextView - Filter'), 5)
 
-Mobile.tap(findTestObject('06 Get Listing/android.widget.TextView - Filter'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(500,360)
 
-Mobile.tap(findTestObject('06 Get Listing/android.widget.TextView - state'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(520,750)
 
-Mobile.tap(findTestObject('06 Get Listing/android.widget.TextView - Kelantan'), 0)
+Mobile.tap(findTestObject('06 Get Listing/android.widget.TextView - Select'), 5)
 
-Mobile.tap(findTestObject('06 Get Listing/android.widget.TextView - Select'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(500,600)
 
-Mobile.tap(findTestObject('06 Get Listing/android.widget.TextView - area'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(500,540)
 
-Mobile.tap(findTestObject('06 Get Listing/android.widget.TextView - Ayer Lanas'), 0)
+Mobile.tap(findTestObject('06 Get Listing/android.widget.TextView - Select'), 5)
 
-Mobile.tap(findTestObject('06 Get Listing/android.widget.TextView - Select'), 0)
-
-Mobile.tap(findTestObject('06 Get Listing/android.widget.TextView - Search'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(300,2200)
 
 Mobile.delay(1)
 Mobile.tapAtPosition(320, 1430)
 
 Mobile.delay(1)
-Mobile.tap(findTestObject('00 Back Button/android.widget.TextView - Convert to my listing'), 0)
+Mobile.tap(findTestObject('00 Back Button/android.widget.TextView - Convert to my listing'), 5)
 
-Mobile.tap(findTestObject('00 Back Button/android.widget.TextView - Confirm'), 0)
+Mobile.tap(findTestObject('00 Back Button/android.widget.TextView - Confirm'), 5)
 
-WebUI.callTestCase(findTestCase('0-GENERAL/PermissionPopup'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('0-GENERAL/PermissionPopup'), [:])
 
-Mobile.tap(findTestObject('06 Get Listing/android.widget.Button - Preview'), 0)
+Mobile.tap(findTestObject('06 Get Listing/android.widget.Button - Preview'), 5)
 
-Mobile.tap(findTestObject('Object Repository/06 Get Listing/android.widget.Button - Convert'), 0)
+Mobile.tap(findTestObject('Object Repository/06 Get Listing/android.widget.Button - Convert'), 120)
 
-Mobile.scrollToText('MEMO')
-
-Mobile.setText(findTestObject('Object Repository/06 Get Listing/android.widget.EditText -highl'), 'test convert owner listing', 0)
-Mobile.hideKeyboard()
-
-Mobile.tap(findTestObject('Object Repository/06 Get Listing/android.widget.Button - Next'), 0)
-
-Mobile.setText(findTestObject('Object Repository/06 Get Listing/android.widget.EditText - Addline1'), '123 Convert owner listing', 0)
-Mobile.hideKeyboard()
-
-Mobile.setText(findTestObject('Object Repository/06 Get Listing/android.widget.EditText - postcode'), '23400', 0)
-Mobile.hideKeyboard()
-
-Mobile.tap(findTestObject('Object Repository/06 Get Listing/android.widget.Button - Next (1)'), 0)
+Mobile.swipe(500, 1800, 500, 200)
 
 Mobile.delay(1)
-Mobile.scrollToText('FACILITIES')
+Mobile.swipe(500, 1800, 500, 200)
 
+Mobile.delay(1)
+Mobile.setText(findTestObject('Object Repository/04 Property/android.widget.EditText - Edit Hightlight'), 'test convert owner listing', 5)
+Mobile.hideKeyboard()
+
+Mobile.tap(findTestObject('Object Repository/06 Get Listing/android.widget.Button - Next'),5)
+
+Mobile.setText(findTestObject('Object Repository/06 Get Listing/android.widget.EditText - address1'), '123 Convert owner listing', 5)
+Mobile.hideKeyboard()
+
+Mobile.setText(findTestObject('Object Repository/06 Get Listing/android.widget.EditText - postcode'), '23400', 5)
+Mobile.hideKeyboard()
+
+Mobile.tap(findTestObject('Object Repository/06 Get Listing/android.widget.Button - Next (1)'), 5)
+
+Mobile.delay(1)
+Mobile.swipe(500, 1800, 500, 200)
+
+Mobile.delay(1)
 Mobile.swipe(500, 1800, 500, 200)
 
 Mobile.delay(1)
@@ -82,19 +91,22 @@ Mobile.delay(1)
 Mobile.swipe(500, 1800, 500, 200)
 
 Mobile.delay(1)
-Mobile.tap(findTestObject('06 Get Listing/android.widget.Button - Submit'), 0)
+Mobile.tap(findTestObject('06 Get Listing/android.widget.Button - Submit'), 5)
+
 
 Mobile.delay(1)
 Mobile.tapAtPosition(800, 1340)
 
 Mobile.delay(1)
-Mobile.tap(findTestObject('04 Property/android.widget.TextView - back'), 0)
+Mobile.tapAtPosition(530,880)
 
-Mobile.tap(findTestObject('04 Property/android.widget.TextView - Exit'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(720,1350)
 
-Mobile.tap(findTestObject('Object Repository/06 Get Listing/android.widget.TextView - back listing'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(75,130)
 
-Mobile.tap(findTestObject('Object Repository/06 Get Listing/android.widget.TextView - back'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(100,360)
 
-WebUI.callTestCase(findTestCase('0-GENERAL/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
-
+Mobile.callTestCase(findTestCase('0-GENERAL/Logout'), [:])

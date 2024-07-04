@@ -19,9 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonSlurper as JsonSlurper
 import org.apache.commons.lang.RandomStringUtils as RandomStringUtils
 
-Mobile.callTestCase(findTestCase('0-GENERAL/Open Agent App'), [:], FailureHandling.STOP_ON_FAILURE)
-
-Mobile.callTestCase(findTestCase('0-GENERAL/Login - Pro Plus (Cado)'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('0-GENERAL/Login - Pro Plus (Cado)'), [:])
 
 Mobile.tap(findTestObject('12 Agent Profile/android.widget.TextView - Submit Ren ID'), 0)
 
@@ -30,7 +28,6 @@ Mobile.tap(findTestObject('12 Agent Profile/android.widget.TextView - level'), 0
 Mobile.tap(findTestObject('12 Agent Profile/android.widget.TextView - REN'), 0)
 
 def randID = RandomStringUtils.randomNumeric(6)
-
 Mobile.setText(findTestObject('12 Agent Profile/android.widget.EditText - ID'), randID, 0)
 
 Mobile.tap(findTestObject('12 Agent Profile/android.widget.TextView - Submit'), 0)
@@ -40,11 +37,8 @@ Mobile.verifyElementVisible(findTestObject('12 Agent Profile/android.widget.Text
 Mobile.tap(findTestObject('12 Agent Profile/android.widget.TextView - Ok (1)'), 0)
 
 renidDraft = WS.sendRequest(findTestObject('12 Agent Profile/renidDraft'))
-
 def slurper = new JsonSlurper()
-
 def result = slurper.parseText(renidDraft.getResponseBodyContent())
-
 renIdApply = result.documents[0].id
 
 assert renIdApply == randID

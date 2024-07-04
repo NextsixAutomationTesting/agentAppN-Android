@@ -72,6 +72,7 @@ class AgentAppListener {
 	
 	
 	/**REMEMBER TO COM OUT WHEN RUNNING TEST SUITE**/
+	/*
 	@AfterTestCase
 	def ifFailed(TestCaseContext testCaseContext)
 	{
@@ -85,5 +86,5 @@ class AgentAppListener {
 		{
 			closeApp()
 		}
-	}
+	} */
 }

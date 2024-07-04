@@ -17,50 +17,54 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.callTestCase(findTestCase('0-GENERAL/Open Agent App'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('0-GENERAL/Login - Pro Plus (Cado)'), [:])
 
-Mobile.callTestCase(findTestCase('0-GENERAL/Login - Pro Plus (Cado)'), [:], FailureHandling.STOP_ON_FAILURE)
-
-Mobile.scrollToText('Ai Matching', FailureHandling.STOP_ON_FAILURE)
+Mobile.scrollToText('Ai Matching')
 
 Mobile.tap(findTestObject('08 Meeting Room/android.widget.TextView - Meeting Room'), 0)
 
 Mobile.tap(findTestObject('08 Meeting Room/android.widget.TextView - ADD'), 0)
 
 'create new booking'
-Mobile.tap(findTestObject('08 Meeting Room/android.widget.TextView - branch'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(500,450)
 
-Mobile.tap(findTestObject('08 Meeting Room/android.widget.TextView - HQ Branch'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(450,850)
 
-Mobile.tap(findTestObject('08 Meeting Room/android.widget.TextView - Select'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(900,270)
 
-Mobile.tap(findTestObject('08 Meeting Room/android.widget.TextView - Search'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(520,1850)
 
 Mobile.tap(findTestObject('08 Meeting Room/android.widget.TextView - Book Now'), 0)
 
 Mobile.setText(findTestObject('08 Meeting Room/android.widget.EditText - Meeting Title'), 'Automation Testing', 0)
-
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('08 Meeting Room/android.widget.TextView - start time'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(500,1280)
 
-Mobile.tap(findTestObject('08 Meeting Room/android.view.ViewGroup - 1st time slot'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(500,1500)
 
-Mobile.tap(findTestObject('08 Meeting Room/android.widget.TextView - duration'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(500,1500)
 
-Mobile.tap(findTestObject('08 Meeting Room/android.view.ViewGroup - 1hr'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(500,1600)
 
-Mobile.scrollToText('We may contact you if there are any changes to your booking.', FailureHandling.STOP_ON_FAILURE)
+Mobile.scrollToText('We may contact you if there are any changes to your booking.')
 
 Mobile.setText(findTestObject('08 Meeting Room/android.widget.EditText - contact'), '124568564', 0)
-
 Mobile.hideKeyboard()
 
 Mobile.tap(findTestObject('08 Meeting Room/android.widget.TextView - Book Now form'), 0)
 
 Mobile.verifyElementVisible(findTestObject('08 Meeting Room/android.widget.TextView - Booking successful'), 10)
 
-Mobile.scrollToText('Got It', FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.scrollToText('Got It')
 
 Mobile.tap(findTestObject('08 Meeting Room/android.widget.TextView - Got It'), 0)
 
@@ -83,5 +87,5 @@ assert cancelTime == meetTime
 
 Mobile.tap(findTestObject('08 Meeting Room/android.widget.TextView - back meeting'), 0)
 
-Mobile.callTestCase(findTestCase('0-GENERAL/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('0-GENERAL/Logout'), [:])
 

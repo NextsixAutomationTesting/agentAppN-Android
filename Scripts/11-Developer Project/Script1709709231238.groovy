@@ -17,9 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.callTestCase(findTestCase('0-GENERAL/Open Agent App'), [:], FailureHandling.STOP_ON_FAILURE)
-
-Mobile.callTestCase(findTestCase('0-GENERAL/Login - Pro Plus (Cado)'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('0-GENERAL/Login - Pro Plus (Cado)'), [:])
 
 Mobile.scrollToText('Ai Matching', FailureHandling.STOP_ON_FAILURE)
 
@@ -27,26 +25,24 @@ Mobile.tap(findTestObject('11 Developer Project/android.widget.TextView - Develo
 
 Mobile.tap(findTestObject('11 Developer Project/android.widget.TextView - search'), 0)
 
-Mobile.setText(findTestObject('11 Developer Project/android.widget.EditText - Search for developer project'), 'Project', 
-    0)
-
+Mobile.setText(findTestObject('11 Developer Project/android.widget.EditText - Search for developer project'), 'Project', 0)
 Mobile.hideKeyboard()
 
-Mobile.tap(findTestObject('11 Developer Project/android.widget.TextView - Search button'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(540,450)
 
 Mobile.tap(findTestObject('11 Developer Project/android.widget.TextView - FILTER'), 0)
 
-Mobile.tap(findTestObject('11 Developer Project/android.widget.TextView - state'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(500, 850)
 
-Mobile.tap(findTestObject('11 Developer Project/android.widget.TextView - Wilayah Persekutuan Kuala Lumpur'), 0)
-
-Mobile.tap(findTestObject('11 Developer Project/android.widget.TextView - area'), 0)
-
-Mobile.tap(findTestObject('11 Developer Project/android.widget.TextView - Ampang Hilir'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(500, 1100)
 
 Mobile.tap(findTestObject('11 Developer Project/android.widget.TextView - Ok'), 0)
 
-Mobile.tap(findTestObject('11 Developer Project/android.widget.ImageView - map'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(1040,150)
 
 Mobile.waitForElementPresent(findTestObject('11 Developer Project/android.widget.RelativeLayout - map'), 0)
 

@@ -18,101 +18,77 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang.RandomStringUtils as RandomStringUtils
 
-Mobile.callTestCase(findTestCase('0-GENERAL/Open Agent App'), [:], FailureHandling.STOP_ON_FAILURE)
-
-Mobile.callTestCase(findTestCase('0-GENERAL/Login - Pro Plus (Cado)'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('0-GENERAL/Login - Pro Plus (Cado)'), [:])
 
 Mobile.tap(findTestObject('09 Master Properties/android.widget.TextView - Master Property'), 0)
 
 Mobile.tap(findTestObject('09 Master Properties/android.widget.TextView - create'), 0)
 
 def randChar = RandomStringUtils.randomAlphanumeric(6)
-
 String randName = 'Automation ' + randChar.toUpperCase()
-
 Mobile.setText(findTestObject('09 Master Properties/android.widget.EditText - propname'), randName, 0)
-
 Mobile.hideKeyboard()
 
 Mobile.delay(1)
-
 Mobile.tapAtPosition(450, 1110)
 
 Mobile.delay(1)
-
 Mobile.tapAtPosition(450, 1250)
 
 Mobile.delay(1)
-
 Mobile.tapAtPosition(450, 1350)
 
 Mobile.delay(1)
-
 Mobile.tapAtPosition(450, 1500)
 
 Mobile.delay(1)
-
 Mobile.tapAtPosition(450, 1600)
 
 Mobile.delay(1)
-
 Mobile.tapAtPosition(450, 1750)
 
-Mobile.delay(1)
+Mobile.tap(findTestObject('09 Master Properties/android.widget.Button - Next'), 5)
 
-Mobile.tap(findTestObject('09 Master Properties/android.widget.Button - Next'), 0)
-
-Mobile.setText(findTestObject('09 Master Properties/android.widget.EditText - address1'), 'Jln Mewah 8, Taman Ampang Mewah', 
-    0)
-
+Mobile.setText(findTestObject('Object Repository/09 Master Properties/android.widget.EditText-add1'), 'Jln Mewah 8, Taman Ampang Mewah', 5)
 Mobile.hideKeyboard()
 
-Mobile.setText(findTestObject('09 Master Properties/android.widget.EditText - city'), 'Ampang Mewah', 0)
-
+Mobile.setText(findTestObject('Object Repository/09 Master Properties/android.widget.EditText-city'), 'Ampang Mewah', 0)
 Mobile.hideKeyboard()
 
-Mobile.setText(findTestObject('09 Master Properties/android.widget.EditText - postcode'), '68000', 0)
-
+Mobile.setText(findTestObject('Object Repository/09 Master Properties/android.widget.EditText-postc'), '68000', 0)
 Mobile.delay(1)
-
 Mobile.hideKeyboard()
 
 Mobile.delay(1)
-
 Mobile.tapAtPosition(450, 1650)
 
 Mobile.delay(1)
-
 Mobile.tapAtPosition(450, 1800)
 
 Mobile.delay(1)
-
 Mobile.tapAtPosition(450, 1900)
 
 Mobile.delay(1)
-
 Mobile.tapAtPosition(450, 2050)
 
 Mobile.delay(1)
-
-Mobile.scrollToText('Cafeteria', FailureHandling.STOP_ON_FAILURE)
+Mobile.scrollToText('Cafeteria')
 
 Mobile.tap(findTestObject('09 Master Properties/android.widget.Button - Publish'), 0)
 
-Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
-
+Mobile.delay(1)
 Mobile.tapAtPosition(790, 1340)
 
 Mobile.verifyElementVisible(findTestObject('09 Master Properties/android.widget.Image - Successful Checkmark'), 0)
 
 Mobile.tap(findTestObject('09 Master Properties/android.widget.TextView - back'), 0)
 
-Mobile.tap(findTestObject('09 Master Properties/android.widget.TextView - Exit'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(720, 1400)
 
 Mobile.tap(findTestObject('09 Master Properties/android.widget.TextView - Pending'), 0)
 
-masterName = Mobile.getText(findTestObject('09 Master Properties/android.widget.TextView - master title'), 0)
-
+masterName = Mobile.getText(findTestObject('Object Repository/09 Master Properties/android.widget.TextView - Automation S9H4RW'), 0)
 assert masterName == randName
 
 Mobile.tap(findTestObject('09 Master Properties/android.widget.TextView - mas back'), 0)

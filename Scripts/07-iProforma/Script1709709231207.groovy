@@ -17,8 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.callTestCase(findTestCase('0-GENERAL/Open Agent App'), [:], FailureHandling.STOP_ON_FAILURE)
-
 Mobile.callTestCase(findTestCase('0-GENERAL/Login - TRR (Wilson)'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'chatbot'

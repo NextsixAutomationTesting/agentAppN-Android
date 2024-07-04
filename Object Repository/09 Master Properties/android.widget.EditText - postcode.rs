@@ -3,7 +3,7 @@
    <description></description>
    <name>android.widget.EditText - postcode</name>
    <tag></tag>
-   <elementGuidId>82e9e475-10f5-4b99-8735-fe60bd4637c2</elementGuidId>
+   <elementGuidId>da031fd9-12ef-4843-9e0f-53721002011f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -13,7 +13,7 @@
       <name>class</name>
       <type>Main</type>
       <value>android.widget.EditText</value>
-      <webElementGuid>b12ab83f-4348-48b2-acc5-2f4d4a6a417f</webElementGuid>
+      <webElementGuid>6015cdff-84d1-4c25-9ccb-584b15e2e139</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -21,7 +21,7 @@
       <name>index</name>
       <type>Main</type>
       <value>7</value>
-      <webElementGuid>ba419176-4294-4a80-860e-846b0042f0af</webElementGuid>
+      <webElementGuid>86674049-8958-4ca6-baf8-470dcfef5360</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,15 +29,15 @@
       <name>resource-id</name>
       <type>Main</type>
       <value>propPostcode</value>
-      <webElementGuid>95b61c07-d7fd-4974-96f1-20a339f396a9</webElementGuid>
+      <webElementGuid>961a756b-9137-4498-8c5a-675288bbd471</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>package</name>
       <type>Main</type>
       <value>com.nextsix.proforma</value>
-      <webElementGuid>dfb53e04-6379-46fa-8c82-060b2b3b807e</webElementGuid>
+      <webElementGuid>35423ef6-d9da-465d-8787-c8351c0095ea</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>checkable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>d5c45ea0-b833-4e17-9a87-0eb146a3f102</webElementGuid>
+      <webElementGuid>da4a943d-47b0-467d-bcfb-14671230b1e7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -53,7 +53,7 @@
       <name>checked</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>d20be388-f7f4-4883-b53f-ac4d9aecb56f</webElementGuid>
+      <webElementGuid>a1a1799f-0797-46e3-9873-67f5ee676bbb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>clickable</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>427e10fd-3a60-4af3-9d65-1b706679af6f</webElementGuid>
+      <webElementGuid>0e5db864-29a6-4f98-92d5-ce1acfb12c40</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>70eb5927-6cda-48b3-8af3-673ae82fb980</webElementGuid>
+      <webElementGuid>974b2607-3f55-4bbc-b7a6-18d30386f8d3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>focusable</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>f33fc6d4-a6ab-4602-b04b-f5e24e87f801</webElementGuid>
+      <webElementGuid>af636df6-a713-4826-913e-2f76677992f3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>focused</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>fafcaf51-1459-4648-b240-26b992e52b84</webElementGuid>
+      <webElementGuid>1bc5fff6-e971-480c-992b-59e6f7acb2da</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>scrollable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>1a0f5df8-7e4e-4d1e-acce-d895d2b0249f</webElementGuid>
+      <webElementGuid>8a64f620-1a59-4ac0-b384-058fd57a0a53</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>long-clickable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>27ba375a-56b2-460a-9fd1-6e6681b78d28</webElementGuid>
+      <webElementGuid>08caee1a-de88-45b7-ad0d-e423668faae9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -109,7 +109,7 @@
       <name>password</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>bb9f78ef-d98d-44cf-ba9a-a1c1cc61d248</webElementGuid>
+      <webElementGuid>aa11a904-5bf1-428b-a423-7fb5820f5ec2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -117,7 +117,7 @@
       <name>selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>7d9b6443-fc1e-471c-b01e-d2803c0e2dad</webElementGuid>
+      <webElementGuid>55dfcb51-07a2-4387-91ee-30e5627765f9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -125,7 +125,7 @@
       <name>x</name>
       <type>Main</type>
       <value>107</value>
-      <webElementGuid>e3abaa39-7fb7-42d2-98cc-bf7cca8200ff</webElementGuid>
+      <webElementGuid>8f279e2f-80be-4f81-ae22-2c457a1bad76</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -133,7 +133,7 @@
       <name>y</name>
       <type>Main</type>
       <value>1386</value>
-      <webElementGuid>956e3bb3-a385-41b0-95d3-29467ad2acef</webElementGuid>
+      <webElementGuid>1036e1cf-a7a4-445c-b9d4-e676d515202e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -141,7 +141,7 @@
       <name>width</name>
       <type>Main</type>
       <value>866</value>
-      <webElementGuid>79c05d57-ac03-4108-97f2-d40547c6914f</webElementGuid>
+      <webElementGuid>2d127823-857a-48a4-b95c-9d8d360ae403</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -149,7 +149,7 @@
       <name>height</name>
       <type>Main</type>
       <value>93</value>
-      <webElementGuid>e59d06ff-8de3-416a-9dac-1dfb9c160c54</webElementGuid>
+      <webElementGuid>eb159b2d-edfa-4860-a499-3d005b05b4de</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -157,7 +157,7 @@
       <name>bounds</name>
       <type>Main</type>
       <value>[107,1386][973,1479]</value>
-      <webElementGuid>cd760aec-9c40-4d9e-b958-aa7ffc477569</webElementGuid>
+      <webElementGuid>f5fa4c0e-ece1-48f1-b26f-065265578712</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -165,15 +165,15 @@
       <name>displayed</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>7fa1f5ca-216d-4a26-bf9f-523c5428b9e0</webElementGuid>
+      <webElementGuid>50cee25b-b8a3-48c0-b9c3-b890b6521ec5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>hint</name>
       <type>Main</type>
       <value>POSTCODE * Postcode</value>
-      <webElementGuid>514a8ec6-f8fa-452f-b830-5cde6f8b8319</webElementGuid>
+      <webElementGuid>b315c36b-0286-448e-8691-70f14aa41c23</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -181,16 +181,67 @@
       <name>text</name>
       <type>Main</type>
       <value></value>
-      <webElementGuid>6e62bc36-187c-46cd-ba18-03dcbadde203</webElementGuid>
+      <webElementGuid>0a445b0f-f688-4c4a-8c5c-2713e27b8727</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>//hierarchy/android.widget.FrameLayout[3]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[3]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.webkit.WebView[1]/android.webkit.WebView[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.widget.EditText[4]</value>
-      <webElementGuid>f9499e64-d221-4ae8-96a8-96ce7e6314ee</webElementGuid>
+      <webElementGuid>f2d06724-5d30-48d3-ac5a-93fc4d7a33c8</webElementGuid>
    </webElementProperties>
-   <locator>//hierarchy/android.widget.FrameLayout[3]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[3]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.webkit.WebView[1]/android.webkit.WebView[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.widget.EditText[4][count(. | //*[@class = 'android.widget.EditText']) = count(//*[@class = 'android.widget.EditText'])]</locator>
+   <locator>//*[@class = 'android.widget.EditText' and @package = 'com.nextsix.proforma' and @hint = 'POSTCODE * Postcode']</locator>
+   <locatorCollection>
+      <entry>
+         <key>NAME</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ACCESSIBILITY</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//hierarchy/android.widget.FrameLayout[3]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.widget.FrameLayout[3]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.view.ViewGroup[1]/android.webkit.WebView[1]/android.webkit.WebView[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.widget.EditText[4]</value>
+      </entry>
+      <entry>
+         <key>ANDROID_VIEWTAG</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>ANDROID_UI_AUTOMATOR</key>
+         <value>new UiSelector().className(&quot;android.widget.EditText&quot;).resourceId(&quot;propPostcode&quot;).packageName(&quot;com.nextsix.proforma&quot;).enabled(true).clickable(true).longClickable(false).checkable(false).checked(false).focusable(true).focused(false).scrollable(false).selected(false).index(7)</value>
+      </entry>
+      <entry>
+         <key>IOS_CLASS_CHAIN</key>
+         <value>**[`enabled == 1 AND hint == 'POSTCODE * Postcode'`]</value>
+      </entry>
+      <entry>
+         <key>CUSTOM</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IOS_PREDICATE_STRING</key>
+         <value>enabled == 1 AND hint == 'POSTCODE * Postcode'</value>
+      </entry>
+      <entry>
+         <key>ID</key>
+         <value>propPostcode</value>
+      </entry>
+      <entry>
+         <key>ATTRIBUTES</key>
+         <value>//*[@class = 'android.widget.EditText' and @package = 'com.nextsix.proforma' and @hint = 'POSTCODE * Postcode']</value>
+      </entry>
+      <entry>
+         <key>CLASS_NAME</key>
+         <value>android.widget.EditText</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+   </locatorCollection>
    <locatorStrategy>ATTRIBUTES</locatorStrategy>
+   <platform>ANDROID</platform>
 </MobileElementEntity>
