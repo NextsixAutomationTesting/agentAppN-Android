@@ -27,81 +27,64 @@ import io.appium.java_client.touch.WaitOptions as WaitOptions
 Mobile.tap(findTestObject('00 Back Button/android.widget.TextView - My Property'), 0)
 
 Mobile.delay(2)
-
 AppiumDriver driver = MobileDriverFactory.getDriver()
-
-TouchAction swipeUp = new TouchAction(driver).press(PointOption.point(560, 2100)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(
-            500))).moveTo(PointOption.point(560, 1000)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(200))).moveTo(
-    PointOption.point(560, 340)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(500))).release()
+TouchAction swipeUp = new TouchAction(driver)
+.press(PointOption.point(560, 2100)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(500)))
+.moveTo(PointOption.point(560, 1000)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(200)))
+.moveTo(PointOption.point(560, 340)).waitAction(WaitOptions.waitOptions(Duration.ofMillis(500)))
+.release()
 
 swipeUp.perform()
 
 Mobile.tapAtPosition(560, 1750)
-
 Mobile.tap(findTestObject('00 Back Button/android.widget.TextView - Edit'), 0)
-
 Mobile.delay(1)
-
 Mobile.pressBack()
 
 Mobile.delay(1)
-
-Mobile.tap(findTestObject('00 Back Button/android.widget.ImageView - memo'), 0)
-
+Mobile.tapAtPosition(960,1850)
 Mobile.waitForElementPresent(findTestObject('00 Back Button/android.widget.EditText - Leave your memo here'), 0)
-
 Mobile.delay(1)
-
 Mobile.pressBack()
 
 Mobile.delay(1)
-
 memoClose = Mobile.verifyElementExist(findTestObject('00 Back Button/android.widget.EditText - Leave your memo here'), 
-    0, FailureHandling.OPTIONAL)
+    5, FailureHandling.OPTIONAL)
 
-if (memoClose == true) {
+if (memoClose == true) 
+	{
     Mobile.tap(findTestObject('00 Back Button/android.widget.ImageView - close memo'), 0)
 
     KeywordUtil.markFailed('Listing memo back button')
-}
+	}
 
 Mobile.pressBack()
 
 Mobile.delay(1)
-
 Mobile.tapAtPosition(950, 2120)
 
 Mobile.delay(1)
-
 Mobile.tapAtPosition(950, 1900)
 
 Mobile.delay(2)
-
 Mobile.pressBack()
 
 Mobile.delay(2)
-
 Mobile.tapAtPosition(950, 2120)
 
 Mobile.delay(1)
-
 Mobile.tapAtPosition(950, 1670)
 
 Mobile.delay(2)
-
 Mobile.pressBack()
 
 Mobile.delay(2)
-
 Mobile.tapAtPosition(950, 2120)
 
 Mobile.delay(1)
-
 Mobile.tapAtPosition(950, 1450)
 
 Mobile.delay(1)
-
 Mobile.pressBack()
-
 Mobile.pressBack()
 

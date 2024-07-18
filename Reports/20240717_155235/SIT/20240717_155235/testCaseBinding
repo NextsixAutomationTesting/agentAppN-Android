@@ -1,0 +1,33 @@
+{"testCaseName":"Test Cases/00-Android Back Button/00-Back Button","testCaseId":"Test Cases/00-Android Back Button/00-Back Button","iterationVariableName":""}
+{"testCaseName":"Test Cases/01-Login","testCaseId":"Test Cases/01-Login","iterationVariableName":""}
+{"testCaseName":"Test Cases/02-Bussiness Card/02.0-E Business Card","testCaseId":"Test Cases/02-Bussiness Card/02.0-E Business Card","iterationVariableName":""}
+{"testCaseName":"Test Cases/03-Agent Online","testCaseId":"Test Cases/03-Agent Online","iterationVariableName":""}
+{"testCaseName":"Test Cases/04-My Property/04.0-Create Property","testCaseId":"Test Cases/04-My Property/04.0-Create Property","iterationVariableName":""}
+{"testCaseName":"Test Cases/04-My Property/04.1-Edit Property","testCaseId":"Test Cases/04-My Property/04.1-Edit Property","iterationVariableName":""}
+{"testCaseName":"Test Cases/04-My Property/04.2-Property Draft","testCaseId":"Test Cases/04-My Property/04.2-Property Draft","iterationVariableName":""}
+{"testCaseName":"Test Cases/04-My Property/04.3-Publish from Draft","testCaseId":"Test Cases/04-My Property/04.3-Publish from Draft","iterationVariableName":""}
+{"testCaseName":"Test Cases/04-My Property/04.4-Archive","testCaseId":"Test Cases/04-My Property/04.4-Archive","iterationVariableName":""}
+{"testCaseName":"Test Cases/04-My Property/04.5-Best Deal Slot","testCaseId":"Test Cases/04-My Property/04.5-Best Deal Slot","iterationVariableName":""}
+{"testCaseName":"Test Cases/04-My Property/04.6-Package Limit","testCaseId":"Test Cases/04-My Property/04.6-Package Limit","iterationVariableName":""}
+{"testCaseName":"Test Cases/05-Message","testCaseId":"Test Cases/05-Message","iterationVariableName":""}
+{"testCaseName":"Test Cases/06-Get Listing/06.0-Get Listing Filter","testCaseId":"Test Cases/06-Get Listing/06.0-Get Listing Filter","iterationVariableName":""}
+{"testCaseName":"Test Cases/06-Get Listing/06.1-Get Listing Calls","testCaseId":"Test Cases/06-Get Listing/06.1-Get Listing Calls","iterationVariableName":""}
+{"testCaseName":"Test Cases/06-Get Listing/06.2-Cobroke Message","testCaseId":"Test Cases/06-Get Listing/06.2-Cobroke Message","iterationVariableName":""}
+{"testCaseName":"Test Cases/06-Get Listing/06.3-Convert Owner Listing","testCaseId":"Test Cases/06-Get Listing/06.3-Convert Owner Listing","iterationVariableName":""}
+{"testCaseName":"Test Cases/07-iProforma","testCaseId":"Test Cases/07-iProforma","iterationVariableName":""}
+{"testCaseName":"Test Cases/08-Meeting Room","testCaseId":"Test Cases/08-Meeting Room","iterationVariableName":""}
+{"testCaseName":"Test Cases/09-Master Properties","testCaseId":"Test Cases/09-Master Properties","iterationVariableName":""}
+{"testCaseName":"Test Cases/10-Appointment/10.0-Complete Appointment","testCaseId":"Test Cases/10-Appointment/10.0-Complete Appointment","iterationVariableName":""}
+{"testCaseName":"Test Cases/10-Appointment/10.1-Reject Appointment","testCaseId":"Test Cases/10-Appointment/10.1-Reject Appointment","iterationVariableName":""}
+{"testCaseName":"Test Cases/11-Developer Project","testCaseId":"Test Cases/11-Developer Project","iterationVariableName":""}
+{"testCaseName":"Test Cases/12-Profile/12.0-Edit Profile","testCaseId":"Test Cases/12-Profile/12.0-Edit Profile","iterationVariableName":""}
+{"testCaseName":"Test Cases/12-Profile/12.1-REN ID","testCaseId":"Test Cases/12-Profile/12.1-REN ID","iterationVariableName":""}
+{"testCaseName":"Test Cases/13-Academy/13.0-Assessment","testCaseId":"Test Cases/13-Academy/13.0-Assessment","iterationVariableName":""}
+{"testCaseName":"Test Cases/13-Academy/13.1-Guidance","testCaseId":"Test Cases/13-Academy/13.1-Guidance","iterationVariableName":""}
+{"testCaseName":"Test Cases/14-Announcements/14.0-Announcement","testCaseId":"Test Cases/14-Announcements/14.0-Announcement","iterationVariableName":""}
+{"testCaseName":"Test Cases/15-Dashboard","testCaseId":"Test Cases/15-Dashboard","iterationVariableName":""}
+{"testCaseName":"Test Cases/16-Home Pro/16.0-HomePro Refer","testCaseId":"Test Cases/16-Home Pro/16.0-HomePro Refer","iterationVariableName":""}
+{"testCaseName":"Test Cases/16-Home Pro/16.1-Enquiry Complete","testCaseId":"Test Cases/16-Home Pro/16.1-Enquiry Complete","iterationVariableName":""}
+{"testCaseName":"Test Cases/16-Home Pro/16.2-Enquiry Reject","testCaseId":"Test Cases/16-Home Pro/16.2-Enquiry Reject","iterationVariableName":""}
+{"testCaseName":"Test Cases/16-Home Pro/16.3-Enquiry Attachments","testCaseId":"Test Cases/16-Home Pro/16.3-Enquiry Attachments","iterationVariableName":""}
+{"testCaseName":"Test Cases/16-Home Pro/16.4-Total Referral Fee","testCaseId":"Test Cases/16-Home Pro/16.4-Total Referral Fee","iterationVariableName":""}

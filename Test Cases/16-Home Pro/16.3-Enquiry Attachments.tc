@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>14-Announcement</name>
+   <name>16.3-Enquiry Attachments</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>54b1fbaf-ccce-4ea8-9d99-fb6fee3dc400</testCaseGuid>
+   <testCaseGuid>edf69bc6-ea18-4bcc-9655-1e45647a78b4</testCaseGuid>
 </TestCaseEntity>

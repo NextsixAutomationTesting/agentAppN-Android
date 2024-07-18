@@ -27,56 +27,36 @@ import io.appium.java_client.touch.WaitOptions as WaitOptions
 Mobile.tap(findTestObject('06 Get Listing/android.widget.TextView - Get Listing'), 0)
 
 Mobile.delay(5)
-
 Mobile.tapAtPosition(590, 1520)
-
 Mobile.pressBack()
 
 Mobile.delay(1)
-
 Mobile.tap(findTestObject('06 Get Listing/android.widget.TextView - Filter'), 0)
-
 Mobile.delay(1)
-
 Mobile.pressBack()
 
 Mobile.tap(findTestObject('00 Back Button/android.widget.TextView - Contact history'), 0)
-
 Mobile.delay(1)
-
 Mobile.pressBack()
 
 Mobile.tap(findTestObject('00 Back Button/android.widget.TextView - Enquiry'), 0)
-
 Mobile.delay(1)
-
 Mobile.tapAtPosition(320, 1430)
-
 Mobile.delay(1)
-
 Mobile.pressBack()
 
 Mobile.delay(1)
-
 Mobile.tap(findTestObject('00 Back Button/android.widget.TextView - Owner (Sale)'), 0)
-
 Mobile.delay(1)
-
 Mobile.tapAtPosition(320, 1430)
 
 Mobile.delay(1)
-
 Mobile.tap(findTestObject('00 Back Button/android.widget.TextView - Convert to my listing'), 0)
 
 Mobile.delay(1)
-
 Mobile.tap(findTestObject('00 Back Button/android.widget.TextView - Confirm'), 1430)
-
 Mobile.delay(1)
-
 Mobile.pressBack()
-
 Mobile.pressBack()
-
 Mobile.pressBack()
 

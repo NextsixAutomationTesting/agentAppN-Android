@@ -17,51 +17,39 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.callTestCase(findTestCase('0-GENERAL/Open Agent App'), [:], FailureHandling.STOP_ON_FAILURE)
-
 Mobile.delay(1)
-
 Mobile.tap(findTestObject('16 HomePro/android.widget.TextView - Get My Referrals'), 0)
 
-Mobile.tap(findTestObject('00 Back Button/android.widget.ImageView - merchant card'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(280,1800)
 
 Mobile.delay(1)
-
 Mobile.pressBack()
 
 Mobile.delay(1)
-
 Mobile.tap(findTestObject('Object Repository/00 Back Button/android.widget.TextView - See All'), 0)
 
 Mobile.delay(1)
-
 Mobile.pressBack()
 
 Mobile.delay(1)
-
 Mobile.tapAtPosition(300, 1150)
 
 Mobile.delay(1)
-
 Mobile.tapAtPosition(320, 610)
 
 Mobile.delay(1)
-
 Mobile.pressBack()
 
 Mobile.delay(1)
-
 Mobile.pressBack()
 
 Mobile.delay(1)
-
 Mobile.tap(findTestObject('Object Repository/00 Back Button/android.widget.TextView - My Referral'), 0)
 
 Mobile.delay(1)
-
 Mobile.pressBack()
 
 Mobile.delay(1)
-
 Mobile.pressBack()
 

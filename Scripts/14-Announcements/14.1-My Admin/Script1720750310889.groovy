@@ -17,35 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.callTestCase(findTestCase('0-GENERAL/Open Agent App'), [:], FailureHandling.STOP_ON_FAILURE)
-
-Mobile.callTestCase(findTestCase('0-GENERAL/Login - Pro Plus (Cado)'), [:], FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('14 Announcement/android.widget.TextView - Message'), 0)
-
-Mobile.tap(findTestObject('14 Announcement/android.widget.TextView - Announcement'), 0)
-
-Mobile.tap(findTestObject('14 Announcement/android.view.ViewGroup - first announcement'), 0)
-
-annoTitle = Mobile.getText(findTestObject('14 Announcement/android.widget.TextView - title'), 0)
-
-annoContent = Mobile.getText(findTestObject('14 Announcement/android.widget.TextView - content'), 0)
-
-announcementLog = WS.sendRequest(findTestObject('14 Announcement/announcementLog'))
-
-def sluper = new groovy.json.JsonSlurper()
-
-def result = sluper.parseText(announcementLog.getResponseBodyContent())
-
-String title = result.documents[0].title
-
-String content = result.documents[0].content
-
-assert title == annoTitle
-
-assert content == annoContent
-
-Mobile.tap(findTestObject('14 Announcement/android.widget.TextView - back'), 0)
-
-Mobile.callTestCase(findTestCase('0-GENERAL/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
-

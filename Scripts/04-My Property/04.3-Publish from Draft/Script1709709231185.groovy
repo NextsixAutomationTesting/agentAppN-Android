@@ -87,6 +87,7 @@ Mobile.setText(findTestObject('04 Property/android.widget.EditText - Bathrooms')
 Mobile.setText(findTestObject('04 Property/android.widget.EditText - Carparks'), '2', 0)
 Mobile.hideKeyboard()
 
+Mobile.delay(1)
 Mobile.scrollToText('FACILITIES')
 
 Mobile.tap(findTestObject('04 Property/android.widget.RadioButton - Vacant'), 0)
@@ -96,24 +97,29 @@ Mobile.swipe(500, 1800, 500, 200)
 Mobile.delay(1)
 Mobile.tapAtPosition(800, 2150)
 
-Mobile.waitForElementPresent(findTestObject('04 Property/android.view.View - Upload or drag Images'), 0)
-Mobile.tap(findTestObject('04 Property/android.view.View - Upload or drag Images'), 1)
+Mobile.waitForElementPresent(findTestObject('Object Repository/04 Property/android.view.View - ball-triangle-loading (1)'), 0)
+
+Mobile.tap(findTestObject('Object Repository/04 Property/android.view.View - ball-triangle-loading (1)'), 1)
 
 Mobile.tap(findTestObject('04 Property/android.widget.TextView - Media picker'), 1)
 
 Mobile.tap(findTestObject('04 Property/android.widget.TextView - Albums'), 1)
 
+//album > messenger > 1~3 photo
 Mobile.tap(findTestObject('Object Repository/04 Property/android.widget.TextView - Downloads'), 1)
 
 Mobile.delay(1)
-Mobile.tapAtPosition(170,700)
-Mobile.tapAtPosition(530,700)
-Mobile.tapAtPosition(900,700)
+
+Mobile.tapAtPosition(170, 700)
+
+Mobile.tapAtPosition(530, 700)
+
+Mobile.tapAtPosition(900, 700)
 
 Mobile.tap(findTestObject('04 Property/android.widget.Button - Add (5)'), 1)
 
-//verify 3rd photo
-Mobile.waitForElementPresent(findTestObject('Object Repository/04 Property/android.widget.Button - 3rd upload draft'), 300)
+//verify upload complete
+Mobile.waitForElementAttributeValue(findTestObject('Object Repository/04 Property/android.view.View - ball-triangle-loading (1)'), 'text', 'Upload or drag Images', 300)
 
 Mobile.delay(1)
 Mobile.swipe(500, 1800, 500, 200)

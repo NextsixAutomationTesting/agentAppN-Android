@@ -48,7 +48,7 @@ class AgentAppListener {
 	}
 	
 	@BeforeTestCase
-	def beforeCase(TestCaseContext testCaseContext) 
+	def beforeStart(TestCaseContext testCaseContext) 
 	{
 		openApp()
 	}
@@ -71,8 +71,8 @@ class AgentAppListener {
     }
 	
 	
-	/**REMEMBER TO COM OUT WHEN RUNNING TEST SUITE**/
-	/*
+	
+
 	@AfterTestCase
 	def ifFailed(TestCaseContext testCaseContext)
 	{
@@ -80,11 +80,8 @@ class AgentAppListener {
 		{
 			Mobile.delay(1)
 			clearAppDataAndCloseApp()
-			//openApp()
+			openApp()
 		}
-		else if (testCaseContext.getTestCaseStatus().equals("PASSED"))
-		{
-			closeApp()
-		}
-	} */
+
+	} 
 }

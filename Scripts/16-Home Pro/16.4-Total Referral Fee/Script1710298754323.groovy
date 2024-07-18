@@ -19,13 +19,11 @@ import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonSlurper as JsonSlurper
 import java.text.NumberFormat as NumberFormat
 
-Mobile.callTestCase(findTestCase('0-GENERAL/Open Agent App'), [:], FailureHandling.STOP_ON_FAILURE)
-
-Mobile.callTestCase(findTestCase('0-GENERAL/Login - Pro Plus (Cado)'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('0-GENERAL/Login - Pro Plus (Cado)'), [:])
 
 Mobile.scrollToText('Get My Referrals', FailureHandling.STOP_ON_FAILURE)
 
-totalAmount = Mobile.getText(findTestObject('16 HomePro/android.widget.TextView - RM0'), 0)
+totalAmount = Mobile.getText(findTestObject('Object Repository/16 HomePro/android.widget.TextView - RM946,673'), 0)
 
 referralFee = WS.sendRequest(findTestObject('16 HomePro/referralFee'))
 

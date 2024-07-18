@@ -26,21 +26,22 @@ import java.time.format.DateTimeFormatter as DateTimeFormatter
 import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Date as Date
 
-WebUI.callTestCase(findTestCase('0-GENERAL/Open Agent App'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.callTestCase(findTestCase('0-GENERAL/Login - TRR (Wilson)'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('0-GENERAL/Login - TRR (Wilson)'), [:])
 
 Mobile.tap(findTestObject('13 Academy/android.widget.TextView - Academy'), 0)
+
+Mobile.delay(2)
 
 Mobile.tap(findTestObject('13 Academy/android.widget.TextView - Agency Letter'), 0)
 
 Mobile.tap(findTestObject('13 Academy/android.widget.TextView - Your GPS to success.pdf'), 0)
 
-Mobile.verifyElementVisible(findTestObject('13 Academy/android.widget.TextView - Peview'), 10)
+Mobile.verifyElementVisible(findTestObject('Object Repository/13 Academy/android.widget.TextView - Your GPS to success'), 10)
 
 Mobile.pressBack()
 
-Mobile.tap(findTestObject('13 Academy/android.widget.TextView - download'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(970,860)
 
 if (Mobile.verifyElementVisible(findTestObject('13 Academy/android.widget.Button - Download again'), 2, FailureHandling.OPTIONAL)) {
     Mobile.tap(findTestObject('13 Academy/android.widget.Button - Download again'), 0)
@@ -50,10 +51,10 @@ if (Mobile.verifyElementVisible(findTestObject('Object Repository/13 Academy/and
 	{Mobile.tap(findTestObject('Object Repository/13 Academy/android.widget.Button - Cancel'), 0)}
 
 Mobile.delay(5)
+Mobile.tapAtPosition(850,2350)
 
-Mobile.tap(findTestObject('13 Academy/android.widget.ImageView - switch app'), 0)
-
-Mobile.tap(findTestObject('13 Academy/android.widget.ImageView - switch app'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(850,2350)
 
 def nowTime = new Date()
 

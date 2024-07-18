@@ -35,9 +35,11 @@ String randQ2 = RandomStringUtils.randomAlphabetic(1).toUpperCase() + RandomStri
 WS.sendRequest(findTestObject('13 Academy/editAssessment', [('q') : randQ, ('ans') : randAns, ('q1') : randQ1, ('ans1') : randAns1
             , ('q2') : randQ2, ('ans2') : randAns2]))
 
-Mobile.tap(findTestObject('13 Academy/android.widget.TextView - Academy'), 0)
+Mobile.tap(findTestObject('13 Academy/android.widget.TextView - Academy (1)'), 0)
 
-Mobile.tap(findTestObject('13 Academy/android.widget.TextView - Assessment'), 0)
+Mobile.delay(2)
+
+Mobile.tap(findTestObject('13 Academy/android.widget.TextView - Assessment (1)'), 0)
 
 Mobile.tap(findTestObject('13 Academy/android.widget.TextView - Automation Testing'), 0)
 
@@ -47,39 +49,39 @@ Mobile.tap(findTestObject('13 Academy/android.widget.TextView - Yes'), 0)
 
 Mobile.waitForElementPresent(findTestObject('13 Academy/android.widget.TextView - Confirm Answer'), 30)
 
-Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(2)
 
 Mobile.tapAtPosition(500, 1450)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(2)
 
 Mobile.tapAtPosition(500, 780)
 
 Mobile.tap(findTestObject('13 Academy/android.widget.TextView - Confirm Answer'), 0)
 
-Mobile.tap(findTestObject('13 Academy/android.widget.TextView - Confirm Answer'), 0)
+Mobile.tap(findTestObject('Object Repository/13 Academy/android.widget.TextView - Continue'), 0)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tapAtPosition(500, 950)
-
-Mobile.tap(findTestObject('13 Academy/android.widget.TextView - Confirm Answer'), 0)
-
-Mobile.tap(findTestObject('13 Academy/android.widget.TextView - Confirm Answer'), 0)
-
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(2)
 
 Mobile.tapAtPosition(500, 950)
 
 Mobile.tap(findTestObject('13 Academy/android.widget.TextView - Confirm Answer'), 0)
 
+Mobile.tap(findTestObject('Object Repository/13 Academy/android.widget.TextView - Continue'), 0)
+
+Mobile.delay(2)
+
+Mobile.tapAtPosition(500, 950)
+
 Mobile.tap(findTestObject('13 Academy/android.widget.TextView - Confirm Answer'), 0)
+
+Mobile.tap(findTestObject('Object Repository/13 Academy/android.widget.TextView - Continue'), 0)
 
 Mobile.tap(findTestObject('13 Academy/android.widget.TextView - Exit'), 0)
 
-Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(2)
 
 Mobile.tap(findTestObject('13 Academy/android.widget.TextView - back'), 0)
 
-Mobile.callTestCase(findTestCase('0-GENERAL/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('0-GENERAL/Logout'), [:])
 

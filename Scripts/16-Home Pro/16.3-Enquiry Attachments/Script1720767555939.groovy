@@ -16,17 +16,51 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
-import io.appium.java_client.AppiumDriver as AppiumDriver
-import org.openqa.selenium.WebElement as WebElement
-import org.openqa.selenium.remote.RemoteWebElement as RemoteWebElement
-import java.util.concurrent.TimeUnit as TimeUnit
 import java.time.LocalDateTime as LocalDateTime
 import java.time.format.DateTimeFormatter as DateTimeFormatter
 import java.text.SimpleDateFormat as SimpleDateFormat
 import java.util.Date as Date
+import groovy.json.JsonSlurper as JsonSlurper
+import org.apache.commons.lang.RandomStringUtils as RandomStringUtils
+import java.time.Duration as Duration
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
+import io.appium.java_client.AppiumDriver as AppiumDriver
+import io.appium.java_client.TouchAction as TouchAction
+import io.appium.java_client.touch.offset.PointOption as PointOption
+import io.appium.java_client.touch.WaitOptions as WaitOptions
+import java.util.concurrent.TimeUnit as TimeUnit
 
-Mobile.tap(findTestObject('16 HomePro/android.widget.TextView - attach'), 0)
+Mobile.callTestCase(findTestCase('0-GENERAL/Login - Pro Plus (Cado)'), [:])
+
+Mobile.scrollToText('Get My Referrals')
+
+Mobile.tap(findTestObject('16 HomePro/android.widget.TextView - Get My Referrals'), 0)
+
+LocalDateTime nowMyt = LocalDateTime.now()
+LocalDateTime comTime = nowMyt.plusDays(14).withHour(0)
+DateTimeFormatter dateForm = DateTimeFormatter.ofPattern('yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'')
+
+String comDate = comTime.format(dateForm)
+String enqNote = 'This enquiry is created at: ' + nowMyt
+
+WS.sendRequest(findTestObject('16 HomePro/newEnquiry', [('comDate') : comDate, ('enqNote') : enqNote]))
+
+def latestEnquiry = WS.sendRequest(findTestObject('16 HomePro/latestEnquiry'))
+def slurper = new JsonSlurper()
+def result = slurper.parseText(latestEnquiry.getResponseBodyContent())
+String enquiryId = result.documents[0]._id
+
+def referAmount = RandomStringUtils.randomNumeric(4)
+WS.sendRequest(findTestObject('16 HomePro/completeEnquiry', [('enquiryId') : enquiryId, ('referAmount') : referAmount]))
+
+Mobile.tap(findTestObject('16 HomePro/android.widget.TextView - My Referral'), 0)
+
+Mobile.delay(1)
+Mobile.tap(findTestObject('16 HomePro/android.widget.TextView - Completed'), 0)
+
+Mobile.delay(1)
+Mobile.tapAtPosition(970,580)
 
 Mobile.tap(findTestObject('16 HomePro/android.widget.TextView - preview attach'), 0)
 
@@ -34,7 +68,8 @@ Mobile.verifyElementVisible(findTestObject('16 HomePro/android.widget.TextView -
 
 Mobile.pressBack()
 
-Mobile.tap(findTestObject('16 HomePro/android.widget.TextView - attach'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(970,580)
 
 Mobile.tap(findTestObject('16 HomePro/android.widget.TextView - download attach'), 0)
 
@@ -42,11 +77,11 @@ if (Mobile.verifyElementVisible(findTestObject('13 Academy/android.widget.Button
 	Mobile.tap(findTestObject('13 Academy/android.widget.Button - Download again'), 0)
 }
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.delay(5)
+Mobile.tapAtPosition(850,2350)
 
-Mobile.tap(findTestObject('13 Academy/android.widget.ImageView - switch app'), 0)
-
-Mobile.tap(findTestObject('13 Academy/android.widget.ImageView - switch app'), 0)
+Mobile.delay(1)
+Mobile.tapAtPosition(850,2350)
 
 def nowTime = new Date()
 
@@ -88,3 +123,10 @@ println(differenceTime)
 assert differenceTime < 180
 
 assert fileType == 'pdf'
+
+Mobile.tap(findTestObject('16 HomePro/android.widget.TextView - back referral'), 0)
+
+Mobile.tap(findTestObject('16 HomePro/android.widget.TextView - back home'), 0)
+
+Mobile.callTestCase(findTestCase('0-GENERAL/Logout'), [:])
+
